@@ -7,6 +7,7 @@ const FormAction = () => {
 
     return (
         <div>
+            <h1>Form Action</h1>
             <form action={handleFormAction}>
                 <input type="text" name='name' placeholder="Write Name" />
                 <br />

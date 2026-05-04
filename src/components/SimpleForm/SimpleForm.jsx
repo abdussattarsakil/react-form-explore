@@ -6,6 +6,7 @@ const SimpleForm = () => {
     }
     return (
         <div>
+            <h1>Simple Form</h1>
             <form onSubmit={handleSubmit}>
                 <input type="text" name="name" placeholder="Write your name" />
                 <br />
