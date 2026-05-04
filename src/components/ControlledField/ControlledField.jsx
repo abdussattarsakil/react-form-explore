@@ -4,15 +4,17 @@ const ControlledField = () => {
 
     const handleSubmit = e => {
         // e.preventDefault();
+        setPassword(e.target.value)
+        password.length < 6 ? setError('input more than 6 characters') : setError('')
     }
 
-    const [password,setPassword]=useState('')
+    const [password, setPassword] = useState('')
 
-    const [error,setError]=useState('')
+    const [error, setError] = useState('')
 
-    const handlePasswordOnChange=e=>{
-        setPassword(e.target.value)
-        password.length<6 ? setError('input more than 6 characters'):setError('')
+    const handlePasswordOnChange = e => {
+        // setPassword(e.target.value)
+        // password.length < 6 ? setError('input more than 6 characters') : setError('')
     }
 
     return (
