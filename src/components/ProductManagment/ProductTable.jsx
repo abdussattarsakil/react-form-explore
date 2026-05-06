@@ -1,7 +1,30 @@
-const ProductTable = ({products}) => {
+const ProductTable = ({ products }) => {
     return (
         <div>
-            <h3>{products.length}</h3>
+            <h3>Products: {products.length}</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {
+                        products.map((product, index) => (
+                            <tr>
+                                <td>{index + 1}</td>
+                                <td>{product.name}</td>
+                                <td>{product.quantity}</td>
+                                <td></td>
+                            </tr>
+                        ))
+                    }
+                </tbody>
+            </table>
         </div>
     );
 };
