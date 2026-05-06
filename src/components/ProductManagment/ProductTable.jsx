@@ -19,7 +19,7 @@ const ProductTable = ({ products }) => {
                                 <td>{index + 1}</td>
                                 <td>{product.name}</td>
                                 <td>{product.quantity}</td>
-                                <td></td>
+                                <td><button>Update</button></td>
                             </tr>
                         ))
                     }

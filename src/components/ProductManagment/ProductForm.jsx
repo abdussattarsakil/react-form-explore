@@ -8,6 +8,9 @@ const ProductForm = ({ handleProducts }) => {
         const price = e.target.price.value
         const quantity = e.target.quantity.value
 
+        //validation
+
+
         const newProduct = {
             name,
             price,
@@ -19,6 +22,7 @@ const ProductForm = ({ handleProducts }) => {
 
         // form reset
         // e.target.reset();
+                              
     }
 
     return (
